@@ -1,0 +1,51 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "io.github.ennuil",
+		"id": "boring_spawn_chunks",
+		"version": "${version}",
+		"metadata": {
+			"name": "Boring Spawn Chunks",
+			"description": "Backports the \"spawnChunkRadius\" game rule to Minecraft 1.20.5 alongside its new looks and default.",
+			"contributors": {
+				"Ennui Langeweile": "Owner"
+			},
+			"contact": {
+				"homepage": "https://modrinth.com/mod/boring_spawn_chunks",
+				"issues": "https://github.com/Up-Mods/boring_spawn_chunks/issues",
+				"sources": "https://github.com/Up-Mods/boring_spawn_chunks"
+			},
+			"icon": "assets/boring_spawn_chunks/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "io.github.ennuil.boring_spawn_chunks.ModInit",
+			"modmenu": "io.github.ennuil.boring_spawn_chunks.modmenu.ModMenuIntegration"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.24.0"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=7.5.0"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.20.1"
+			}
+		],
+		"breaks": [
+			{
+				"id": "carpet",
+				"reason": "This is The Original Deal! This hecker did configurable spawn chunks before Minecraft did! This mod's dev works for Mojang now! /carpet spawnChunksSize! Use it! It is perhaps safer for you to remove this mod and use what Carpet already has."
+			},
+			{
+				"id": "ksyxis",
+				"reason": "You are already using a spawn chunk nuke mod! This mod is gonna conflict with it! Either remove That Nuke or remove This Capable-Of-Being-A-Nuke!"
+			}
+		]
+	},
+	"mixin": "boring_spawn_chunks.mixins.json"
+}

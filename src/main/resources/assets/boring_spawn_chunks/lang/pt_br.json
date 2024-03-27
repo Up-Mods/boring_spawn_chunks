@@ -1,0 +1,4 @@
+{
+  "gamerule.spawnChunkRadius": "Raio de terreno do ponto de renascimento",
+  "gamerule.spawnChunkRadius.description": "Quantidade de terreno que permanece carregado ao redor do ponto de renascimento da superfície."
+}
