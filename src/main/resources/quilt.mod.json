@@ -6,7 +6,7 @@
 		"version": "${version}",
 		"metadata": {
 			"name": "Boring Spawn Chunks",
-			"description": "Backports the \"spawnChunkRadius\" game rule to Minecraft 1.20.5 alongside its new looks and default.",
+			"description": "Backports the \"spawnChunkRadius\" game rule from Minecraft 1.20.5 alongside its new looks and default.",
 			"contributors": {
 				"Ennui Langeweile": "Owner"
 			},
