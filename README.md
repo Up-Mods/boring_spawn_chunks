@@ -9,6 +9,6 @@ See more on the [Modrinth page](https://modrinth.com/mod/boring_spawn_chunks)!
 This mod is available for download on:
 
 - [Modrinth (recommended)](https://modrinth.com/mod/boring_spawn_chunks)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/boring_spawn_chunks)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/boring-spawn-chunks)
 - [GitHub Releases](https://github.com/Up-Mods/boring_spawn_chunks/releases)
 
