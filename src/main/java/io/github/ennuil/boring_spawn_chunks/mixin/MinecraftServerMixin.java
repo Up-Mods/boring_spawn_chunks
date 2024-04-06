@@ -29,7 +29,7 @@ public abstract class MinecraftServerMixin {
 
 	@ModifyExpressionValue(method = "loadWorld", at = @At(value = "CONSTANT", args = "intValue=11"))
 	private int modify11(int original) {
-		int radius = this.saveProperties.getGameRules().getInt(ModGameRules.SPAWN_CHUNK_RADIUS);
+		int radius = this.saveProperties.getGameRules().getIntValue(ModGameRules.SPAWN_CHUNK_RADIUS);
         return radius > 0 ? radius + 1 : 0;
 	}
 
@@ -46,7 +46,7 @@ public abstract class MinecraftServerMixin {
 
 	@ModifyExpressionValue(method = "prepareStartRegion", at = @At(value = "CONSTANT", args = "intValue=441"))
 	private int modify441(int original) {
-		int spawnChunkRadius = this.getGameRules().getInt(ModGameRules.SPAWN_CHUNK_RADIUS);
+		int spawnChunkRadius = this.getGameRules().getIntValue(ModGameRules.SPAWN_CHUNK_RADIUS);
 		return spawnChunkRadius > 0 ? MathHelper.square(spawnChunkRadius * 2 + 1) : 0;
 	}
 }

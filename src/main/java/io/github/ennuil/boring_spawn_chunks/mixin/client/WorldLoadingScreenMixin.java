@@ -33,7 +33,7 @@ public abstract class WorldLoadingScreenMixin {
 		method = "render",
 		at = @At(
 			value = "INVOKE",
-			target = "Lnet/minecraft/client/gui/GuiGraphics;drawCenteredShadowedText(Lnet/minecraft/client/font/TextRenderer;Ljava/lang/String;III)V"
+			target = "Lnet/minecraft/client/gui/GuiGraphics;drawCenteredShadowedText(Lnet/minecraft/client/font/TextRenderer;Lnet/minecraft/text/Text;III)V"
 		),
 		index = 3
 	)

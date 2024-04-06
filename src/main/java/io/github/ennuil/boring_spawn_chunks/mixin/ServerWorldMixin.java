@@ -70,7 +70,7 @@ public abstract class ServerWorldMixin extends World {
 		)
 	)
 	private <T> void wrapAddTicket(ServerChunkManager instance, ChunkTicketType<T> ticketType, ChunkPos pos, int radius, T argument, Operation<Void> original) {
-		int spawnChunkRadius = this.getGameRules().getInt(ModGameRules.SPAWN_CHUNK_RADIUS) + 1;
+		int spawnChunkRadius = this.getGameRules().getIntValue(ModGameRules.SPAWN_CHUNK_RADIUS) + 1;
 		if (spawnChunkRadius > 1) {
 			instance.addTicket(ticketType, pos, spawnChunkRadius, argument);
 		}

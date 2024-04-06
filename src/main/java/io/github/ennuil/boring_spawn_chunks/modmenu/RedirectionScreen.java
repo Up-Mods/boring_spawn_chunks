@@ -2,7 +2,11 @@ package io.github.ennuil.boring_spawn_chunks.modmenu;
 
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.widget.*;
+import net.minecraft.client.gui.widget.button.ButtonWidget;
+import net.minecraft.client.gui.widget.layout.FrameWidget;
+import net.minecraft.client.gui.widget.layout.GridWidget;
+import net.minecraft.client.gui.widget.text.MultilineTextWidget;
+import net.minecraft.client.gui.widget.text.TextWidget;
 import net.minecraft.text.CommonTexts;
 import net.minecraft.text.Text;
 import net.minecraft.util.Util;
@@ -39,7 +43,7 @@ public class RedirectionScreen extends Screen {
 		}
 
 		this.grid.arrangeElements();
-		this.grid.visitWidgets(this::addDrawableChild);
+		this.grid.visitWidgets(this::addDrawableSelectableElement);
 		this.repositionElements();
 	}
 
@@ -50,7 +54,7 @@ public class RedirectionScreen extends Screen {
 
 	@Override
 	public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
-		this.renderBackground(graphics);
+		this.renderBackground(graphics, mouseX, mouseY, delta);
 		super.render(graphics, mouseX, mouseY, delta);
 	}
 
