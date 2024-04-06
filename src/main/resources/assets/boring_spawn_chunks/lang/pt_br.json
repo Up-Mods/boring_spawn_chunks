@@ -1,4 +1,6 @@
 {
   "gamerule.spawnChunkRadius": "Raio de terreno do ponto de renascimento",
-  "gamerule.spawnChunkRadius.description": "Quantidade de terreno que permanece carregado ao redor do ponto de renascimento da superfície."
+  "gamerule.spawnChunkRadius.description": "Quantidade de terreno que permanece carregado ao redor do ponto de renascimento da superfície.",
+  "boring_spawn_chunks.modmenu_screen.title": "Aviso de configurabilidade de regra do jogo",
+  "boring_spawn_chunks.modmenu_screen.message": "Devido ao objetivo de apenas adicionar a regra do jogo, o Boring Spawn Chunks não fornece padrões configuráveis por si!\n\nUse o mod Boring Default Game Rules para poder configurar não só a regra do jogo desse mod como também a seu irmã da 1.20.5!"
 }

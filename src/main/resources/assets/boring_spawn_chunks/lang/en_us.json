@@ -2,5 +2,5 @@
   "gamerule.spawnChunkRadius": "Spawn chunk radius",
   "gamerule.spawnChunkRadius.description": "Amount of chunks that stay loaded around the overworld spawn position.",
   "boring_spawn_chunks.modmenu_screen.title": "Game Rule Configurability Warning",
-  "boring_spawn_chunks.modmenu_screen.message": "Due to only adding game rules, Boring Spawn Chunks doesn't provide configurable defaults by itself!\n\nUse Boring Default Game Rules in order to configure not only this mod's game rules but also its future sibling!"
+  "boring_spawn_chunks.modmenu_screen.message": "Due to the goal being only adding the game rule, Boring Spawn Chunks doesn't provide configurable defaults by itself!\n\nUse Boring Default Game Rules in order to configure not only this mod's game rules but also its sibling from 1.20.5!"
 }
