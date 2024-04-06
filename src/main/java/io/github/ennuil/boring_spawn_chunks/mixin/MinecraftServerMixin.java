@@ -29,7 +29,8 @@ public abstract class MinecraftServerMixin {
 
 	@ModifyExpressionValue(method = "loadWorld", at = @At(value = "CONSTANT", args = "intValue=11"))
 	private int modify11(int original) {
-        return this.saveProperties.getGameRules().getInt(ModGameRules.SPAWN_CHUNK_RADIUS);
+		int radius = this.saveProperties.getGameRules().getInt(ModGameRules.SPAWN_CHUNK_RADIUS);
+        return radius > 0 ? radius + 1 : 0;
 	}
 
 	@Redirect(
